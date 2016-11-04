@@ -43,10 +43,10 @@
             <div class="panel panel-default">
               <div class="panel-body">
 
-                <form class="form-size">
+              <form class="form-pizza-order">
+
+                <div class="form-size">
                   <h2>Please Choose a Size:</h2>
-
-
                   <div class="radio">
                     <label>
                       <input type="radio" name="size" value="Large" checked>
@@ -60,10 +60,10 @@
                     </label>
                   </div>
 
-                  <button class="btn btn-lg btn-default" type="submit">Next</button>
-                </form>
+                  <button class="btn btn-lg btn-default" type="button" id="form-size">Next</button>
+                </div>
 
-                <form class="form-crust">
+                <div class="form-crust">
                   <h2>Please Choose a Crust Type:</h2>
                   <div class="radio">
                     <label>
@@ -77,69 +77,70 @@
                       Regular
                     </label>
                   </div>
-                  <button class="btn btn-lg btn-default" type="submit">Next</button>
-                </form>
+                  <button class="btn btn-lg btn-default" type="button" id="form-crust">Next</button>
+                </div>
 
-                <form class="form-sauce">
+                <div class="form-sauce">
                   <h2>Please Choose a Sauce:</h2>
                   <div class="radio">
                     <label>
-                      <input type="radio" name="flavor" value="Thick" checked>
+                      <input type="radio" name="Tsauce" value="Tomato Sauce" checked>
                       Tomato Sauce
                     </label>
                   </div>
                   <div class="radio">
                     <label>
-                      <input type="radio" name="flavor" value="Regular">
+                      <input type="radio" name="sauce" value="Basil Pesto">
                       Basil Pesto
                     </label>
                   </div>
                   <div class="radio">
                     <label>
-                      <input type="radio" name="flavor" value="Regular">
-                      Garlic Oliv Oil
+                      <input type="radio" name="sauce" value="Garlic Olive Oil">
+                      Garlic Olive Oil
                     </label>
                   </div>
-                  <button class="btn btn-lg btn-default" type="submit">Next</button>
-                </form>
+                  <button class="btn btn-lg btn-default" type="button" id="form-sauce">Next</button>
+                </div>
 
 
 
 
-                <form class="form-vegTops">
+                <div class="form-vegTops">
                   <div class="form-group">
                     <h2>Add Vegetable Toppings</h2>
-                    <input type="checkbox" name="topping" value="Artichoke Hearts"> Artichoke Hearts<br>
-                    <input type="checkbox" name="topping" value="Basil"> Basil<br>
-                    <input type="checkbox" name="topping" value="Black Olives"> Black Olives<br>
-                    <input type="checkbox" name="topping" value="Crushed Garlic"> Crushed Garlic<br>
-                    <input type="checkbox" name="topping" value="Kalamata Olives"> Kalamata Olives<br>
-                    <input type="checkbox" name="topping" value="Mushrooms"> Mushrooms<br>
-                    <input type="checkbox" name="topping" value="Pineapple"> Pineapple<br>
-                    <input type="checkbox" name="topping" value="Red Onions"> Red Onions<br>
-                    <input type="checkbox" name="topping" value="Roasted Peppers"> Roasted Peppers<br>
-                    <input type="checkbox" name="topping" value="Roma Tomatoes"> Roma Tomatoes<br>
-                    <input type="checkbox" name="topping" value="Yello Onion"> Yello Onions<br>
+                    <input type="checkbox" name="veg-topping" value="Artichoke Hearts"> Artichoke Hearts<br>
+                    <input type="checkbox" name="veg-topping" value="Basil"> Basil<br>
+                    <input type="checkbox" name="veg-topping" value="Black Olives"> Black Olives<br>
+                    <input type="checkbox" name="veg-topping" value="Crushed Garlic"> Crushed Garlic<br>
+                    <input type="checkbox" name="veg-topping" value="Kalamata Olives"> Kalamata Olives<br>
+                    <input type="checkbox" name="veg-topping" value="Mushrooms"> Mushrooms<br>
+                    <input type="checkbox" name="veg-topping" value="Pineapple"> Pineapple<br>
+                    <input type="checkbox" name="veg-topping" value="Red Onions"> Red Onions<br>
+                    <input type="checkbox" name="veg-topping" value="Roasted Peppers"> Roasted Peppers<br>
+                    <input type="checkbox" name="veg-topping" value="Roma Tomatoes"> Roma Tomatoes<br>
+                    <input type="checkbox" name="veg-topping" value="Yello Onion"> Yello Onions<br>
                   </div>
-                 <button class="btn btn-lg btn-default" type="submit">Add Toppings</button>
-                </form>
+                 <button class="btn btn-lg btn-default" type="button" id="form-vegTops">Add Toppings</button>
+               </div>
 
 
-                <form class="form-meatTops">
+                <div class="form-meatTops">
                   <div class="form-group">
                     <h2>Add Meat Toppings</h2>
-                    <input type="checkbox" name="topping" value="Bacon"> Bacon<br>
-                    <input type="checkbox" name="topping" value="Meatballs"> Meatballs<br>
-                    <input type="checkbox" name="topping" value="Pancetta"> Pancetta<br>
-                    <input type="checkbox" name="topping" value="Pepperoni"> Pepperoni<br>
-                    <input type="checkbox" name="topping" value="Poark Sausage"> Pork Sausage<br>
-                    <input type="checkbox" name="topping" value="Proscuitto"> Prosciutto<br>
+                    <input type="checkbox" name="meat-topping" value="Bacon"> Bacon<br>
+                    <input type="checkbox" name="meat-topping" value="Meatballs"> Meatballs<br>
+                    <input type="checkbox" name="meat-topping" value="Pancetta"> Pancetta<br>
+                    <input type="checkbox" name="meat-topping" value="Pepperoni"> Pepperoni<br>
+                    <input type="checkbox" name="meat-topping" value="Poark Sausage"> Pork Sausage<br>
+                    <input type="checkbox" name="meat-topping" value="Proscuitto"> Prosciutto<br>
                   </div>
                  <button class="btn btn-lg btn-default" type="submit">Add Toppings</button>
-                </form>
+               </div>
+             </form>
 
 
-                <form class="customer-info">
+                <div class="customer-info">
                   <h2 class="form-signin-heading">Enter Your Name and Address:</h2>
                   <label for="inputEmail">Enter Name:</label>
                   <input type="text" id="name" class="form-control" placeholder="Name" required autofocus><br>
@@ -150,8 +151,7 @@
                   <label for="state">Enter State:</label>
                   <input type="password" id="state" class="form-control" placeholder="state" required><br>
                   <button class="btn btn-lg btn-default" type="submit">Review Order</button>
-                </form>
-
+                </div>
               </div>
             </div>
           </div>
