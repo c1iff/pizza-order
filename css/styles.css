@@ -138,23 +138,27 @@ body {
 }
 
 .form-size {
-  display: block;
+  display: none;
 }
 
 .form-crust {
-  display: block;
+  display: none;
 }
 
 .form-sauce {
-  display: block;
+  display: none;
 }
 
-.vegetable-toppings {
-  display: block;
+.form-vegTops {
+  display: none;
 }
 
-.meat-toppings {
-  display: block;
+.form-meatTops {
+  display: none;
+}
+
+.customer-info {
+  display: none;
 }
 
 input {

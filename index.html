@@ -22,9 +22,9 @@
               <h3 class="masthead-brand">Chris's Artisan Pizza</h3>
               <nav>
                 <ul class="nav masthead-nav">
-                  <li><a href="index.html">Home</a></li>
-                  <li class="active"><a href="order.html">Order</a></li>
-                  <li><a href="checkout.html">Checkout</a></li>
+                  <li class="active"><a href="index.html">Home</a></li>
+                  <li><a href=#>Order</a></li>
+                  <li><a href=#>Checkout</a></li>
                 </ul>
               </nav>
             </div>
@@ -35,7 +35,7 @@
               <h1 class="cover-heading">Order Pizza.</h1>
               <p class="lead">Our pizzas are hand-crafted and hand-tossed with love & care. we use 100% whole milk mozzarella & imported extra virgin olive oil.</p>
               <p class="lead">
-                <a href="order.html" class="btn btn-lg btn-default" id="order-now">Order Now</a>
+                <button class="btn btn-lg btn-default" id="order-now">Order Now</button>
               </p>
             </div>
 
@@ -49,13 +49,13 @@
 
                   <div class="radio">
                     <label>
-                      <input type="radio" name="flavor" value="Large" checked>
+                      <input type="radio" name="size" value="Large" checked>
                       Large
                     </label>
                   </div>
                   <div class="radio">
                     <label>
-                      <input type="radio" name="flavor" value="Small">
+                      <input type="radio" name="size" value="Small">
                       Small
                     </label>
                   </div>
@@ -67,13 +67,13 @@
                   <h2>Please Choose a Crust Type:</h2>
                   <div class="radio">
                     <label>
-                      <input type="radio" name="flavor" value="Thick" checked>
+                      <input type="radio" name="crust" value="Thick" checked>
                       Thick
                     </label>
                   </div>
                   <div class="radio">
                     <label>
-                      <input type="radio" name="flavor" value="Regular">
+                      <input type="radio" name="crust" value="Regular">
                       Regular
                     </label>
                   </div>
@@ -106,7 +106,7 @@
 
 
 
-                <form class="vegetable-toppings">
+                <form class="form-vegTops">
                   <div class="form-group">
                     <h2>Add Vegetable Toppings</h2>
                     <input type="checkbox" name="topping" value="Artichoke Hearts"> Artichoke Hearts<br>
@@ -125,7 +125,7 @@
                 </form>
 
 
-                <form id="meat-toppings">
+                <form class="form-meatTops">
                   <div class="form-group">
                     <h2>Add Meat Toppings</h2>
                     <input type="checkbox" name="topping" value="Bacon"> Bacon<br>
@@ -139,7 +139,7 @@
                 </form>
 
 
-                <form class="form-signin">
+                <form class="customer-info">
                   <h2 class="form-signin-heading">Enter Your Name and Address:</h2>
                   <label for="inputEmail">Enter Name:</label>
                   <input type="text" id="name" class="form-control" placeholder="Name" required autofocus><br>

@@ -1,12 +1,13 @@
 // Buisness Logic
 
 //constructors
-function Pizza(pizzaSize, crustType, sauceType) {
+function Pizza(pizzaSize) {
   this.pizzaSize = pizzaSize;
-  this.crustType = crustType;
-  this.sauceType = sauceType;
+  this.crustType;
+  this.sauceType;
   this.vegToppings = [];
   this.meatToppings = [];
+  this.cost;
 }
 
 function Customer() {
@@ -50,28 +51,45 @@ Pizza.prototype.addToOrder = function() {
 
 }
 
-var newPizza = new Pizza("Large", "Thick", "Red", "Extra")
-
-newPizza.vegToppings.push("pepperoni", "onions", "tomatoes")
-
-console.log(newPizza);
-newPizza.getCost();
-console.log(newPizza.cost);
-
 
 
 //User Interface Logic
 $(document).ready(function() {
 
+  var newPizza = new Pizza()
+  // var newCustomer = new Customer()
   $("#order-now").click(function() {
-    $("#order-now").hide();
+    $(".home").hide();
     $(".panel").toggle();
+    $(".form-size").toggle();
   })
 
-  $("#order-now").submit(function(event) {
+  $(".form-size").submit(function(event) {
     event.preventDefault();
+    var size = $("input:radio[name=size]:checked").val();
+    var newPizza = new Pizza(size);
+    $(".form-size").toggle();
+    $(".form-crust").toggle();
+    console.log(newPizza);
   })
 
+  $(".form-crust").submit(function(event) {
+    event.preventDefault();
+    var crust = $("input:radio[name=crust]:checked").val();
+    newPizza.crust = crust;
+    $(".form-crust").toggle();
+    $(".form-sauce").toggle();
+    console.log(newPizza);
+  })
+
+  $(".form-sauce").submit(function(event) {
+    event.preventDefault();
+    var sauce = $("input:radio[name=sauce]:checked").val();
+    newPizza.sauce = sauce;
+    $(".form-vegTops").toggle();
+    $(".form-meatTops").toggle();
+    console.log(newPizza);
+  })
 
 
 
