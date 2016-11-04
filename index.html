@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="shortcut icon" type="image/x-icon" href="img/myshop.ico" />
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -21,8 +22,8 @@
               <h3 class="masthead-brand">Chris's Artisan Pizza</h3>
               <nav>
                 <ul class="nav masthead-nav">
-                  <li class="active"><a href="index.html">Home</a></li>
-                  <li><a href="order.html">Order</a></li>
+                  <li><a href="index.html">Home</a></li>
+                  <li class="active"><a href="order.html">Order</a></li>
                   <li><a href="checkout.html">Checkout</a></li>
                 </ul>
               </nav>
@@ -30,11 +31,129 @@
           </div>
 
           <div class="inner cover">
-            <h1 class="cover-heading">Order Pizza.</h1>
-            <p class="lead">Our pizzas are hand-crafted and hand-tossed with love & care. we use 100% whole milk mozzarella & imported extra virgin olive oil.</p>
-            <p class="lead">
-              <a href="order.html" class="btn btn-lg btn-default">Order Now</a>
-            </p>
+            <div class="home">
+              <h1 class="cover-heading">Order Pizza.</h1>
+              <p class="lead">Our pizzas are hand-crafted and hand-tossed with love & care. we use 100% whole milk mozzarella & imported extra virgin olive oil.</p>
+              <p class="lead">
+                <a href="order.html" class="btn btn-lg btn-default" id="order-now">Order Now</a>
+              </p>
+            </div>
+
+
+            <div class="panel panel-default">
+              <div class="panel-body">
+
+                <form class="form-size">
+                  <h2>Please Choose a Size:</h2>
+
+
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="flavor" value="Large" checked>
+                      Large
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="flavor" value="Small">
+                      Small
+                    </label>
+                  </div>
+
+                  <button class="btn btn-lg btn-default" type="submit">Next</button>
+                </form>
+
+                <form class="form-crust">
+                  <h2>Please Choose a Crust Type:</h2>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="flavor" value="Thick" checked>
+                      Thick
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="flavor" value="Regular">
+                      Regular
+                    </label>
+                  </div>
+                  <button class="btn btn-lg btn-default" type="submit">Next</button>
+                </form>
+
+                <form class="form-sauce">
+                  <h2>Please Choose a Sauce:</h2>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="flavor" value="Thick" checked>
+                      Tomato Sauce
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="flavor" value="Regular">
+                      Basil Pesto
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="flavor" value="Regular">
+                      Garlic Oliv Oil
+                    </label>
+                  </div>
+                  <button class="btn btn-lg btn-default" type="submit">Next</button>
+                </form>
+
+
+
+
+                <form class="vegetable-toppings">
+                  <div class="form-group">
+                    <h2>Add Vegetable Toppings</h2>
+                    <input type="checkbox" name="topping" value="Artichoke Hearts"> Artichoke Hearts<br>
+                    <input type="checkbox" name="topping" value="Basil"> Basil<br>
+                    <input type="checkbox" name="topping" value="Black Olives"> Black Olives<br>
+                    <input type="checkbox" name="topping" value="Crushed Garlic"> Crushed Garlic<br>
+                    <input type="checkbox" name="topping" value="Kalamata Olives"> Kalamata Olives<br>
+                    <input type="checkbox" name="topping" value="Mushrooms"> Mushrooms<br>
+                    <input type="checkbox" name="topping" value="Pineapple"> Pineapple<br>
+                    <input type="checkbox" name="topping" value="Red Onions"> Red Onions<br>
+                    <input type="checkbox" name="topping" value="Roasted Peppers"> Roasted Peppers<br>
+                    <input type="checkbox" name="topping" value="Roma Tomatoes"> Roma Tomatoes<br>
+                    <input type="checkbox" name="topping" value="Yello Onion"> Yello Onions<br>
+                  </div>
+                 <button class="btn btn-lg btn-default" type="submit">Add Toppings</button>
+                </form>
+
+
+                <form id="meat-toppings">
+                  <div class="form-group">
+                    <h2>Add Meat Toppings</h2>
+                    <input type="checkbox" name="topping" value="Bacon"> Bacon<br>
+                    <input type="checkbox" name="topping" value="Meatballs"> Meatballs<br>
+                    <input type="checkbox" name="topping" value="Pancetta"> Pancetta<br>
+                    <input type="checkbox" name="topping" value="Pepperoni"> Pepperoni<br>
+                    <input type="checkbox" name="topping" value="Poark Sausage"> Pork Sausage<br>
+                    <input type="checkbox" name="topping" value="Proscuitto"> Prosciutto<br>
+                  </div>
+                 <button class="btn btn-lg btn-default" type="submit">Add Toppings</button>
+                </form>
+
+
+                <form class="form-signin">
+                  <h2 class="form-signin-heading">Enter Your Name and Address:</h2>
+                  <label for="inputEmail">Enter Name:</label>
+                  <input type="text" id="name" class="form-control" placeholder="Name" required autofocus><br>
+                  <label for="street">Enter Street Address:</label>
+                  <input type="password" id="street" class="form-control" placeholder="Street" required><br>
+                  <label for="city">Enter City:</label>
+                  <input type="password" id="city" class="form-control" placeholder="city" required><br>
+                  <label for="state">Enter State:</label>
+                  <input type="password" id="state" class="form-control" placeholder="state" required><br>
+                  <button class="btn btn-lg btn-default" type="submit">Review Order</button>
+                </form>
+
+              </div>
+            </div>
           </div>
 
 

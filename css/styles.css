@@ -133,33 +133,33 @@ body {
  * Order Display Settings
  */
 
-.selectors {
-  text-align: left;
-  margin-left: 25%;
-
+.panel {
+  display: none;
 }
 
 .form-size {
-  display: none;
+  display: block;
 }
 
 .form-crust {
-  display: none;
+  display: block;
 }
 
 .form-sauce {
-  display: none;
+  display: block;
 }
 
 .vegetable-toppings {
-  display: none;
+  display: block;
 }
 
 .meat-toppings {
   display: block;
 }
 
-
+input {
+  font-size: 16px;
+}
 
 /*
  * Affix and center
