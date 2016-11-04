@@ -23,7 +23,7 @@ a:hover {
 * Order Panel
 */
 .panel {
-  background-color: #222;
+  background-color: #111;
 }
 .panel {
   color: #fff;
@@ -97,8 +97,8 @@ body {
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
   background-color: transparent;
-  border-bottom-color: #a9a9a9;
-  border-bottom-color: rgba(255,255,255,.25);
+  cursor: default;
+
 }
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
@@ -159,6 +159,19 @@ body {
 
 .customer-info {
   display: none;
+}
+
+.order-summary {
+  display: none;
+}
+
+.final-review {
+  display: none;
+}
+
+ul {
+ list-style-type: none;
+ font-size: 18px;
 }
 
 input {

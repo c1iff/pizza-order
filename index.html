@@ -12,39 +12,31 @@
   </head>
   <body>
     <div class="site-wrapper">
-
       <div class="site-wrapper-inner">
-
         <div class="cover-container">
-
           <div class="masthead clearfix">
             <div class="inner">
-              <h3 class="masthead-brand">Chris's Artisan Pizza</h3>
+              <h2 class="masthead-brand">Chris's Pizza Place</h2>
               <nav>
                 <ul class="nav masthead-nav">
-                  <li class="active"><a href="index.html">Home</a></li>
-                  <li><a href=#>Order</a></li>
-                  <li><a href=#>Checkout</a></li>
+                  <li class="active" id="home"><a href="index.html">Home</a></li>
+                  <li id="order"><a href=#>Order</a></li>
+                  <li id="checkout"><a href=#>Checkout</a></li>
                 </ul>
               </nav>
             </div>
           </div>
-
           <div class="inner cover">
             <div class="home">
-              <h1 class="cover-heading">Order Pizza.</h1>
-              <p class="lead">Our pizzas are hand-crafted and hand-tossed with love & care. we use 100% whole milk mozzarella & imported extra virgin olive oil.</p>
+              <h1 class="cover-heading">Order Pizza for Delivery.</h1>
+              <p class="lead">Our pizzas are hand-crafted and hand-tossed. We use 100% whole milk mozzarella and imported extra virgin olive oil.</p>
               <p class="lead">
                 <button class="btn btn-lg btn-default" id="order-now">Order Now</button>
               </p>
             </div>
-
-
             <div class="panel panel-default">
               <div class="panel-body">
-
               <form class="form-pizza-order">
-
                 <div class="form-size">
                   <h2>Please Choose a Size:</h2>
                   <div class="radio">
@@ -59,10 +51,8 @@
                       Small
                     </label>
                   </div>
-
                   <button class="btn btn-lg btn-default" type="button" id="form-size">Next</button>
                 </div>
-
                 <div class="form-crust">
                   <h2>Please Choose a Crust Type:</h2>
                   <div class="radio">
@@ -79,12 +69,11 @@
                   </div>
                   <button class="btn btn-lg btn-default" type="button" id="form-crust">Next</button>
                 </div>
-
                 <div class="form-sauce">
                   <h2>Please Choose a Sauce:</h2>
                   <div class="radio">
                     <label>
-                      <input type="radio" name="Tsauce" value="Tomato Sauce" checked>
+                      <input type="radio" name="sauce" value="Tomato Sauce" checked>
                       Tomato Sauce
                     </label>
                   </div>
@@ -102,13 +91,9 @@
                   </div>
                   <button class="btn btn-lg btn-default" type="button" id="form-sauce">Next</button>
                 </div>
-
-
-
-
                 <div class="form-vegTops">
                   <div class="form-group">
-                    <h2>Add Vegetable Toppings</h2>
+                    <h2>Add Vegetable Toppings:</h2>
                     <input type="checkbox" name="veg-topping" value="Artichoke Hearts"> Artichoke Hearts<br>
                     <input type="checkbox" name="veg-topping" value="Basil"> Basil<br>
                     <input type="checkbox" name="veg-topping" value="Black Olives"> Black Olives<br>
@@ -123,11 +108,9 @@
                   </div>
                  <button class="btn btn-lg btn-default" type="button" id="form-vegTops">Add Toppings</button>
                </div>
-
-
                 <div class="form-meatTops">
                   <div class="form-group">
-                    <h2>Add Meat Toppings</h2>
+                    <h2>Add Meat Toppings:</h2>
                     <input type="checkbox" name="meat-topping" value="Bacon"> Bacon<br>
                     <input type="checkbox" name="meat-topping" value="Meatballs"> Meatballs<br>
                     <input type="checkbox" name="meat-topping" value="Pancetta"> Pancetta<br>
@@ -138,29 +121,37 @@
                  <button class="btn btn-lg btn-default" type="submit">Add Toppings</button>
                </div>
              </form>
-
-
+             <div class="order-summary">
+               <h2>Here is Your Order:</h2>
+               <ul class="order-summary-list"></ul>
+               <h2>Your Total Cost is: $<span class="total"></span></h2>
+               <button class="btn btn-lg btn-default" type="button" id="summary">Place Order</button>
+               <button class="btn btn-lg btn-default" type="button" id="summary1">Add Another Pizza</button>
+             </div>
+             <form class="final-order">
                 <div class="customer-info">
-                  <h2 class="form-signin-heading">Enter Your Name and Address:</h2>
+                  <h2 class="form-signin-heading">Enter Your Name and Address for Delivery:</h2>
                   <label for="inputEmail">Enter Name:</label>
                   <input type="text" id="name" class="form-control" placeholder="Name" required autofocus><br>
                   <label for="street">Enter Street Address:</label>
-                  <input type="password" id="street" class="form-control" placeholder="Street" required><br>
+                  <input type="street-address" id="street" class="form-control" placeholder="Street" required><br>
                   <label for="city">Enter City:</label>
-                  <input type="password" id="city" class="form-control" placeholder="city" required><br>
+                  <input type="text" id="city" class="form-control" placeholder="City" required><br>
                   <label for="state">Enter State:</label>
-                  <input type="password" id="state" class="form-control" placeholder="state" required><br>
-                  <button class="btn btn-lg btn-default" type="submit">Review Order</button>
+                  <input type="text" id="state" class="form-control" placeholder="State" required><br>
+                  <button class="btn btn-lg btn-default" type="submit">Finalize and Review</button>
                 </div>
+              </form>
+              <div class="final-review">
+                <h1>Your pizza is on it's way!</h1>
+                <ul class="final-result">
+                </ul>
+              </div>
               </div>
             </div>
           </div>
-
-
         </div>
-
       </div>
-
     </div>
   </body>
 </html>
